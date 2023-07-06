@@ -10,7 +10,7 @@
 
 ## What is CDN ? Why do we use it ?
 
-- Content Delivery Network. They are the network of servers which are strategically placed at different geographical locations. The purpose of CDN is to deliver the content like images, files, scripts, stylesheet quicly and more effectively. 
+- Content Delivery Network. They are the network of servers which are strategically placed at different geographical locations. The purpose of CDN is to deliver the content like images, files, scripts, stylesheet quickly and more effectively. 
 - When the end user requests for the the content, the request is routed to the nearest CDN server instead of website's origin.This proximity helps to reduce latency and improves overall performance. 
 
 ## Why is React known as React ?
@@ -32,6 +32,6 @@
 ## Differnce between async and defer ?
 
 - When we load webpage two major things happen: one is HTML parsing and other is script loading and their execution.
-- normally, when browser encounters the scrript tag, it stops html parsing and then loads scripts and executes them. Post that it again starts the html parsing, hence blocking the rendering of HTML.
+- normally, when browser encounters the script tag, it stops html parsing and then loads scripts and executes them. Post that it again starts the html parsing, hence blocking the rendering of HTML.
 - With async keyword, html parsing and loading of scripts happens simultaneously, once scripts are loaded, html parsing stops and scripts are executed. Thr order of script execution is not guaranteed
 - With defer keyword, script execution happens in the end, after the HTML parsing is completed. This gauranties the order of script execution.
