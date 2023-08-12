@@ -1,13 +1,13 @@
-import React from "react"
-import ReactDOM from "react-dom"
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-const heading = React.createElement("div", { id: "parent" },
-    [React.createElement("div", { id: "child1" },
-        [React.createElement("h1", {}, "I'm in h1 Tag"), React.createElement("h2", {}, "I'm in h2 Tag")]
-    ),
-    React.createElement("div", { id: "child2" },
-        [React.createElement("h1", {}, "I'm in h1 Tag"), React.createElement("h2", {}, "I'm in h2 Tag")]
-    )]
-);
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(heading);
+const heading = React.createElement("h1",{id:"heading"},"Namastey React 🚀 ") // returns an object
+console.log(heading)
+
+const root = ReactDOM.createRoot(document.getElementById("root")) 
+
+const jsxHeading  = <h1>Namastey React</h1> // this is also JS object. Like how React.createElement gives. 
+console.log(jsxHeading)
+
+
+root.render(jsxHeading) 
