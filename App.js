@@ -6,8 +6,26 @@ console.log(heading)
 
 const root = ReactDOM.createRoot(document.getElementById("root")) 
 
-const jsxHeading  = <h1>Namastey React</h1> // this is also JS object. Like how React.createElement gives. 
-console.log(jsxHeading)
+// this is also JS object. Like how React.createElement gives. 
 
+//React component
+
+//console.log(jsxHeading)
+
+const HeadingComponent = ()=>{
+    return <>
+    <h1>Namastey React</h1>
+        <p>Hello People</p>
+    </>
+}
+const jsxHeading  =(
+    <>
+        <h1>Namastey React</h1>
+        <p>Hello People</p>
+        <HeadingComponent/>
+    </>
+)
+
+console.log(HeadingComponent()) // it will console the log like React element 
 
 root.render(jsxHeading) 
