@@ -2,7 +2,7 @@
 2. When I render it is when it becomes HTML object. 
 3. But react developer realized that React.createElement is becoming very clumsy. Hence JSX was introduced. 
 4. JSX is not part of react. We can use react without JSX, but it just become very clumsy. 
-5. Before react : HTML, Javascript files. We used to create skeleton in HTMl and logic in javascript. 
+5. Before react : HTML, JavaScript files. We used to create skeleton in HTMl and logic in javascript. 
 6. JSX is not HTML. Its not HTML inside javascript. Its HTML/XML like syntax. 
 7. The code is written for both human and machine. If only machine then it would have been only 0 and 1. Hence always make the code very readable. 
 ## JSX
@@ -13,13 +13,14 @@
 5. Its mostly installed by parcel(bundler).
 6. Attributes in JSX are given in camel case. 
 7. If my JSX is in multiple line, then I have to wrap inside in round brackets. 
+8. root.render(), it take react element in the brackets. When i say <Title/> , its basically executed and giving react element in the end. 
 
 ## React Component
 1. class based components and functional components. 
 2. Class based : Old way. 
-3. Functional based : New way of writing components. 
+3. Functional based : New way of writing components.  
 
 ## Functional Component. 
 1. normal js function which returns some JSX. OR, a function which return react element. 
 2. If I create a react element ex. title I can just add it as  {title}, and it will behave same as  <Title>
-3. {} inside the JSX, it sanatizes the data before rendering it. Hence malacious data can not come up im UI.
+3. {} inside the JSX, it sanatizes the data before rendering it to prevent cross site attacks as in {} javascript can be run and hacker can fetch cookies, local storage and session storage etc from user's laptop. Hence malacious data can not come up im UI.
